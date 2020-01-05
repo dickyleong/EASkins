@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiWindow.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTabControl.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTabItem.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiScrollViewer.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTitleButton.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiButton.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiRichButton.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiToggleButton.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiDataGrid.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiEfficientDataGrid.xaml"/> 
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTextBox.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiRichTextBox.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiComboBox.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTextBlock.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiTextLink.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiProgressBar.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiCheckBox.xaml"/>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiRadioButton.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary> 
+

@@ -1,0 +1,101 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <SolidColorBrush x:Key="Brush" Color="#FF565656"/><!--主基色画笔-->
+    <Color x:Key="EGrayColor" A="255" R="181" G="181" B="181"/><!--空白处颜色-->
+    <SolidColorBrush x:Key="EGrayBrush" Color="#FFB5B5B5"/><!--空白处颜色画笔-->
+    
+    <!-- Black Brush Colors-->
+    <SolidColorBrush x:Key="Black100"  Color="#FF333333" />
+    <SolidColorBrush x:Key="Black80"  Color="#FF595959" />
+    <SolidColorBrush x:Key="Black60"  Color="#FF888888" />
+    <SolidColorBrush x:Key="Black40"  Color="#FFAAAAAA" />
+    <SolidColorBrush x:Key="Black20"  Color="#FFCCCCCC" />
+    <SolidColorBrush x:Key="Black5"  Color="#FFF0F0F0" />
+
+    <!-- White Brush Colors -->
+    <SolidColorBrush x:Key="White100"  Color="#FFFAFAFA" />
+    <SolidColorBrush x:Key="White80" Color="#CCFAFAFA" />
+    <SolidColorBrush x:Key="White60"  Color="#99FAFAFA" />
+    <SolidColorBrush x:Key="White40"  Color="#66FAFAFA" />
+    <SolidColorBrush x:Key="White20"  Color="#33FAFAFA" />
+
+    <!-- Blue Brush Colors -->
+    <SolidColorBrush x:Key="Blue100"  Color="#FF1BA1E2" />
+    <SolidColorBrush x:Key="Blue80" Color="#CC1BA1E2" />
+    <SolidColorBrush x:Key="Blue60" Color="#991BA1E2" />
+    <SolidColorBrush x:Key="Blue40" Color="#661BA1E2" />
+    <SolidColorBrush x:Key="Blue20"
+                     Color="#331BA1E2" />
+
+    <!-- Purple Brush Colors -->
+    <SolidColorBrush x:Key="Purple100"
+                     Color="#FF910091" />
+    <SolidColorBrush x:Key="Purple80"
+                     Color="#CC910091" />
+    <SolidColorBrush x:Key="Purple60"
+                     Color="#99910091" />
+    <SolidColorBrush x:Key="Purple40"
+                     Color="#66910091" />
+    <SolidColorBrush x:Key="Purple20"
+                     Color="#33910091" />
+
+    <!-- Green Brush Colors -->
+    <SolidColorBrush x:Key="Green100"
+                     Color="#FF8CBF26" />
+    <SolidColorBrush x:Key="Green80"
+                     Color="#CC8CBF26" />
+    <SolidColorBrush x:Key="Green60"
+                     Color="#998CBF26" />
+    <SolidColorBrush x:Key="Green40"
+                     Color="#668CBF26" />
+    <SolidColorBrush x:Key="Green20"
+                     Color="#338CBF26" />
+
+    <!-- Orange Brush Colors -->
+    <SolidColorBrush x:Key="Orange100"
+                     Color="#FFEB5000" />
+    <SolidColorBrush x:Key="Orange80"
+                     Color="#CCEB5000" />
+    <SolidColorBrush x:Key="Orange60"
+                     Color="#99EB5000" />
+    <SolidColorBrush x:Key="Orange40"
+                     Color="#66EB5000" />
+    <SolidColorBrush x:Key="Orange20"
+                     Color="#33EB5000" />
+
+    <!-- Red Brush Colors -->
+    <SolidColorBrush x:Key="Red100"
+                     Color="#FFE51400" />
+    <SolidColorBrush x:Key="Red80"
+                     Color="#CCE51400" />
+    <SolidColorBrush x:Key="Red60"
+                     Color="#99E51400" />
+    <SolidColorBrush x:Key="Red40"
+                     Color="#66E51400" />
+    <SolidColorBrush x:Key="Red20"
+                     Color="#33E51400" />
+
+    <!-- Yellow Brush Colors -->
+    <SolidColorBrush x:Key="Yellow100"
+                     Color="#FFF0C809" />
+    <SolidColorBrush x:Key="Yellow80"
+                     Color="#CCF0C809" />
+    <SolidColorBrush x:Key="Yellow60"
+                     Color="#99F0C809" />
+    <SolidColorBrush x:Key="Yellow40"
+                     Color="#66F0C809" />
+    <SolidColorBrush x:Key="Yellow20" Color="#33F0C809" />
+
+
+    <System:Double x:Key="HeaderOneSize">30</System:Double>
+    <System:Double x:Key="HeaderTwoSize">28</System:Double>
+    <System:Double x:Key="HeaderThreeSize">20</System:Double>
+    <System:Double x:Key="BodyFontSize">16</System:Double>
+    <System:Double x:Key="SmallFontSize">12</System:Double>
+
+    <FontFamily x:Key="HeaderFontFamily">Segoe UI Light, Lucida Sans Unicode, Verdana</FontFamily>
+    <FontFamily x:Key="BodyFontFamily">Segoe UI, Lucida Sans Unicode, Verdana</FontFamily>
+
+</ResourceDictionary>

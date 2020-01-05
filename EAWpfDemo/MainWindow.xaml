@@ -1,0 +1,78 @@
+﻿<Mi:MiWindow x:Class="EAWpfDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Local="clr-namespace:EAWpfDemo"
+        xmlns:Mi="clr-namespace:EAStyles.Controls.MiStyle;assembly=EAStyles"
+        Title="MainWindow" Height="500" Width="800" Icon="Resources/acorn.ico" >
+    <Mi:MiWindow.UserComponent>
+        <WrapPanel>
+            <Mi:MiTitleButton Width="40" Click="btnStyle_Click">
+                <Image Source="Resources/style.png" />
+            </Mi:MiTitleButton>
+        </WrapPanel>
+    </Mi:MiWindow.UserComponent>
+
+    <Grid Margin="10">
+        <Mi:MiTabControl Margin="0" >
+            <Mi:MiTabItem Header="TabItem1" IdxHeader="1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" >
+                        <Mi:MiButton  Content="button" Height="24" Margin="10"/>
+                        <Mi:MiRichButton  Content="button" Height="30" Margin="10" IsButtonBusy="True"/>
+                        <Mi:MiTextBox Margin="10"/>
+                        <Mi:MiRichTextBox Margin="10" Height="40" Text="测试文字测试文字测试文字"/>
+                        <Mi:MiComboBox Margin="10" >
+                            <ComboBoxItem>哈哈</ComboBoxItem>
+                            <ComboBoxItem>呵呵</ComboBoxItem>
+                            <ComboBoxItem>嘿嘿</ComboBoxItem>
+                        </Mi:MiComboBox>
+                        <Mi:MiToggleButton Height="26" Margin="10">开关</Mi:MiToggleButton>
+                        <Mi:MiToggleButton Height="26" Margin="10" CornerRadius="20" BorderCornerRadius="14">开关</Mi:MiToggleButton>
+                        <Mi:MiCheckBox Margin="10" IsChecked="{x:Null}">是否开启</Mi:MiCheckBox>
+                        <Mi:MiCheckBox Margin="10" IsChecked="True">是否开启</Mi:MiCheckBox>
+                        <Mi:MiCheckBox Margin="10" IsEnabled="False">是否开启</Mi:MiCheckBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Mi:MiRadioButton Margin="10">单选1</Mi:MiRadioButton>
+                        <Mi:MiRadioButton Margin="10">单选2</Mi:MiRadioButton>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2">
+                        <Mi:MiDateTimePicker Margin="10"/>
+                        <Mi:MiProgressBar Margin="10" Height="20" />
+                        <Mi:MiDataGrid x:Name="miDataGrid" ItemsSource="{Binding}" Margin="10" Height="150">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="c1" Binding="{Binding test1}"/>
+                                <DataGridTextColumn Header="c2" Binding="{Binding test2}"/>
+                                <DataGridTextColumn Header="c3" Binding="{Binding test3}"/> 
+                            </DataGrid.Columns>                                                       
+                        </Mi:MiDataGrid>
+                        <Mi:MiEfficientDataGrid x:Name="miEDataGrid" ItemsSource="{Binding}" Margin="10 0" Height="150" AutoGenerateColumns="True">
+                        </Mi:MiEfficientDataGrid>
+                        <Mi:MiTextLink Height="40" Margin="10 0" Mouse.MouseDown="MiTextLink_MouseDown">文字链接</Mi:MiTextLink>
+                    </StackPanel>
+                </Grid>
+            </Mi:MiTabItem>
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="2" />
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="99" />
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="-"/>
+            <Mi:MiTabItem Header="TabItem2" IdxHeader="365"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+            <Mi:MiTabItem Header="TabItem2"/>
+        </Mi:MiTabControl>
+    </Grid>
+</Mi:MiWindow>

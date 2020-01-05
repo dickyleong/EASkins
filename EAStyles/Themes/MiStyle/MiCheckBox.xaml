@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Mi="clr-namespace:EAStyles.Controls.MiStyle"
+                    xmlns:local="clr-namespace:EAStyles.Themes.MiStyle">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/EAStyles;component/Themes/MiStyle/MiBase.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <Style TargetType="{x:Type Mi:MiCheckBox}">
+        <Setter Property="SnapsToDevicePixels" Value="true"/>
+        <!--<Setter Property="OverridesDefaultStyle" Value="true"/>-->
+        <Setter Property="BorderBrush" Value="{StaticResource Brush}"/>
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Mi:MiCheckBox}">
+                    <BulletDecorator Background="Transparent" VerticalAlignment="Center">
+                        <BulletDecorator.Bullet>
+                            <Border x:Name="Border" Width="14" 
+                                   Height="14"
+                                   CornerRadius="0"                                    
+                                   Background="{StaticResource Black5}"
+                                   BorderThickness="1"
+                                   BorderBrush="{StaticResource EGrayBrush}">
+                                    <Path 
+                                        Width="8" Height="8" 
+                                        x:Name="CheckMark"
+                                        SnapsToDevicePixels="False" 
+                                        Stroke="{TemplateBinding BorderBrush}"
+                                        StrokeThickness="2"
+                                        Data="M 0 3 L 3 7 L 8 0" />
+                                </Border>
+                            </BulletDecorator.Bullet>
+                        <ContentPresenter Margin="4,0,0,0"
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Left"
+                              RecognizesAccessKey="True"/>
+                    </BulletDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="false">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="{x:Null}">
+                            <Setter TargetName="CheckMark" Property="Data" Value="M 1 1 L 7 1 L 7 7 L 1 7 L 1 1" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="Border" Property="Background" Value="{StaticResource Black20}" />
+                        </Trigger>
+                        <!--<Trigger Property="IsPressed" Value="true">
+                            <Setter TargetName="Border" Property="Background" Value="#E0E0E0" />
+                            <Setter TargetName="Border" Property="BorderBrush" Value="#606060" />
+                        </Trigger>-->
+                        <Trigger Property="IsEnabled" Value="false">
+                            <!--<Setter TargetName="Border" Property="Background" Value="#EEEEEE" />-->
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource EGrayBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource EGrayBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
